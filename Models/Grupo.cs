@@ -15,14 +15,13 @@ namespace TP01-Sisro-Moguelevsky
         dicAlumnos.Add(Alumno1);
         dicAlumnos.Add(Alumno2);
     }
-    public void DevolverIntegrantes()
+           public void DevolverIntegrantes()
     {
-        foreach(Dictionary objDic in dicAlumnos.Values)
-        {
-            Console.WriteLine(objDic.); 
-            Console.WriteLine(objDic.Alumno); 
-            Console.WriteLine(obj.Alumno); 
-        }
+          foreach(Dictionary objDic in Integrante.Values)
+            {
+                Console.WriteLine(objDic.Alumno1); 
+                Console.WriteLine(objDic.Alumno2); 
+            }
         
     }
     }
