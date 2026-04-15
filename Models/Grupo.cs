@@ -19,7 +19,6 @@ namespace TP01-Sisro-Moguelevsky
         public Dictionary<int,Integrante> DevolverIntegrantes()
         {
             return Integrantes;
-            
         }
         public int GetIntegrantes(int dni)
         {
