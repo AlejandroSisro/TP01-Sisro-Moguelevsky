@@ -13,8 +13,8 @@ namespace TP01-Sisro-Moguelevsky
         {
             Integrante Alumno1 = new Integrante(50434049, "Alejandro", "21/06/2010", "Ale");
             Integrante Alumno2 = new Integrante(50233806, "Ezequiel", "15/03/2010", "Echu");
-            dicAlumnos.Add(Alumno1);
-            dicAlumnos.Add(Alumno2);
+            Integrantes.Add(Alumno1);
+            Integrantes.Add(Alumno2);
         }
         public Dictionary<int,Integrante> DevolverIntegrantes()
         {
