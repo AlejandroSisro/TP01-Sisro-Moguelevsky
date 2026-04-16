@@ -1,30 +1,23 @@
 namespace TP01-Sisro-Moguelevsky
 {
-    public class Grupo
+    public class Integrante
     {
-    private Dictionary<int, Integrante> Integrantes;
+    private int dni;
+    private string nombre;
+    private date fechaNacimiento;
+    private string foto;
+    private List<string> Familiares;
+    private List<string> Intereses;
 
-    public Grupo()
+    public Integrante(int dni, string nombre, date fechaNacimiento, string foto)
     {
-        Dictionary<int, Integrante> Integrantes = new Dictionary <int, Integrante>();
+        this.dni = dni;
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+        this.foto = foto;
+        <string> Familiares = new List<string>();
+        <string> Intereses = new List<string>();
     } 
-    public void CargaDatosManual()
-    {
-        Integrante Alumno1 = new Integrante(50434049, "Alejandro", "21/06/2010", "Ale");
-        Integrante Alumno2 = new Integrante(50233806, "Ezequiel", "15/03/2010", "Echu");
-        dicAlumnos.Add(Alumno1);
-        dicAlumnos.Add(Alumno2);
+    
     }
-    public void DevolverIntegrantes()
-    {
-        foreach(Dictionary objDic in dicAlumnos.Values)
-        {
-            Console.WriteLine(objDic.); 
-            Console.WriteLine(objDic.Alumno); 
-            Console.WriteLine(obj.Alumno); 
-        }
-        
-    }
-    }
-   
-}
+}    
