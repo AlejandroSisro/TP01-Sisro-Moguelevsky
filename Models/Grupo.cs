@@ -22,7 +22,10 @@ namespace TP01-Sisro-Moguelevsky
         }
         public int GetIntegrantes(int dni)
         {
-
+            if(Integrantes.ContainsKey(dni) = true)
+            {
+                return Integrantes[dni];
+            }
         }
     }
    
