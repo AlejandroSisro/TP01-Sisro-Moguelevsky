@@ -20,11 +20,15 @@ namespace TP01-Sisro-Moguelevsky
         {
             return Integrantes;
         }
-        public int GetIntegrantes(int dni)
+        public Integrante GetIntegrantes(int dni)
         {
             if(Integrantes.ContainsKey(dni) = true)
             {
                 return Integrantes[dni];
+            }
+            else
+            {
+                return null
             }
         }
     }
