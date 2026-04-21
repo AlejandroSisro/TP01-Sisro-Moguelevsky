@@ -26,5 +26,21 @@ namespace TP01-Sisro-Moguelevsky
     {
         return foto;
     }
+    public int getID()
+    {
+        return dni;
+    }
+    public date getDate()
+    {
+        return fechaNacimiento;
+    }
+    public List<string> getRelatives()
+    {
+        return familiares;
+    }
+    public List<string> getInterests()
+    {
+        return intereses;
+    }
     }
 }    
