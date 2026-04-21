@@ -6,16 +6,17 @@
 <h1>Grupos de Trabajo - Programacion</h1>
 <div>
     
-    @foreach(Integrante item in viewbBag.integrantes)
+    @foreach(Integrante item in viewBag.integrantes)
     {
      <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
     }
-    <h2>El Integrante 1 es @viewbBag.integrantes[0].getName()</h2>
+    <h2>El Integrante 1 es @viewBag.integrantes[0].getName()</h2>
     <img src=Imagenes/@viewBag.integrantes[0].getImage()>
-    <h2>El Integrante 2 es @viewbBag.integrantes[1].getName()</h2>
+    <h2>El Integrante 2 es @viewBag.integrantes[1].getName()</h2>
     <img src=Imagenes/@viewBag.integrantes[1].getImage()>
     
 
 />
 </div>
 </body>
+
