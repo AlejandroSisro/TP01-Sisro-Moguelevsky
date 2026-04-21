@@ -11,8 +11,8 @@ namespace TP01-Sisro-Moguelevsky
         } 
         private void CargaDatosManual()
         {
-            Integrante Alumno1 = new Integrante(50434049, "Alejandro", "21/06/2010", "Ale");
-            Integrante Alumno2 = new Integrante(50233806, "Ezequiel", "15/03/2010", "Echu");
+            Integrante Alumno1 = new Integrante(50434049, "Alejandro", "21/06/2010", "Ale.jpg");
+            Integrante Alumno2 = new Integrante(50233806, "Ezequiel", "15/03/2010", "Echu.jpg");
             Integrantes.Add(Alumno1);
             Integrantes.Add(Alumno2);
         }
