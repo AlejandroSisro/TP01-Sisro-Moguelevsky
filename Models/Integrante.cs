@@ -15,9 +15,16 @@ namespace TP01-Sisro-Moguelevsky
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.foto = foto;
-        <string> Familiares = new List<string>();
-        <string> Intereses = new List<string>();
+        familiares = new List<string>();
+        intereses = new List<string>();
     } 
-    
+    public string getName()
+    {
+        return nombre;
+    }
+    public string getImage()
+    {
+        return foto;
+    }
     }
 }    
