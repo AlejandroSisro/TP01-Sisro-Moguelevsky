@@ -1,15 +1,21 @@
 @{
     ViewData["Title"] = "Grupos de Trabajo";
+
 }
 <body>
 <h1>Grupos de Trabajo - Programacion</h1>
 <div>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
-    <h2>*TEXTO PARA SER EDITADO*</h2>
+    
+    @foreach(Integrante item in viewbBag.integrantes)
+    {
+     <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
+    }
+    <h2>El Integrante 1 es @viewbBag.integrantes[0].getName()</h2>
+    <img src=Imagenes/@viewBag.integrantes[0].getImage()>
+    <h2>El Integrante 2 es @viewbBag.integrantes[1].getName()</h2>
+    <img src=Imagenes/@viewBag.integrantes[1].getImage()>
+    
+
 />
 </div>
 </body>
