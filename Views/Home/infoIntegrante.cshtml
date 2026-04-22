@@ -10,7 +10,7 @@
     }
 <h2>El Integrante identificado por @viewBag.dni es @viewBag.integrantes[dni].getName()</h2>
 <div>
-    <h3>DNI: @viewBag.integrantes[dni].getDNI()</h3>
+    <h3>DNI: @viewBag.integrantes[dni].getID()</h3>
     <h3>Fecha de nacimiento: @viewBag.integrantes[dni].getDate()</h3>
     <img src=Imagenes/@viewBag.integrantes[0].getImage()>
     @for(int i = 0; i < @viewBag.integrantes[dni].getRelatives().Count; i++)
