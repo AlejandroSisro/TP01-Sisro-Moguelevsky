@@ -19,7 +19,7 @@
     }
     @for(int i = 0; i < @viewBag.integrantes[dni].getInterests().Count; i++)
     {
-        @Console.WriteLine(@(viewBag.integrantes[dni].getInterests())[i])
+        @Console.WriteLine(@viewBag.integrantes[dni].getInterests()[i])
     }
 </div>
 <p>Familiarizate con el grupo al que <a href="Index.cshtml">ESTE INTEGRANTE PERTENECE</a></p>
