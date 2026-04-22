@@ -8,7 +8,7 @@
     {
      <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
     }
-<h2>El Integrante 1 es @viewBag.integrantes[0].getName()</h2>
+<h2>El Integrante @viewBag.dni es @viewBag.integrantes[0].getName()</h2>
 <div>
     <h3>DNI: @viewBag.integrantes[0].getDNI()</h3>
     <h3>Fecha de nacimiento: @viewBag.integrantes[0].getDate()</h3>
@@ -22,18 +22,5 @@
         @Console.WriteLine(@(viewBag.integrantes[0].getInterests())[i])
     }
 </div>
-<h2>El Integrante 2 es @viewBag.integrantes[1].getName()</h2>
-<div>
-    <h3>DNI: @viewBag.integrantes[0].getDNI()</h3>
-    <h3>Fecha de nacimiento: @viewBag.integrantes[0].getDate()</h3>
-    <img src=Imagenes/@viewBag.integrantes[1].getImage()>
-    @for(int i = 0; i < @viewBag.integrantes[1].getRelatives().Count; i++)
-    {
-        @Console.WriteLine(@viewBag.integrantes[1].getRelatives()[i])
-    }
-    @for(int i = 0; i < @viewBag.integrantes[1].getInterests().Count; i++)
-    {
-        @Console.WriteLine(@(viewBag.integrantes[1].getInterests())[i])
-    }
-</div>
+
 </body>
