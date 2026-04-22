@@ -8,7 +8,19 @@ h1
 }
 body
 {
-    background-color: #ff6600;
+    background-color: #ff751a;
+}
+h2
+{
+    font-size: 40px;
+    font-family: 'Times New Roman', serif;
+    color: black;
+}
+h3
+{
+    font-size: 25px;
+    font-family: 'Times New Roman', serif;
+    color: black;
 }
 div
 {
@@ -20,4 +32,8 @@ div
 img
 {
     width: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
+
