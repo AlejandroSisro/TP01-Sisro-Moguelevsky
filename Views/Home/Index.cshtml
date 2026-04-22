@@ -9,6 +9,7 @@
     {
      <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
     }
+<section>    
 <div>
     <h2>El Integrante 1 es @viewBag.integrantes[0].getName()</h2>
     <img src=Imagenes/@viewBag.integrantes[0].getImage()>
@@ -40,5 +41,6 @@
         <h3>(@(viewBag.integrantes[1].getInterests())[i]);</h3>
     }
     @viewBag.integrantes[integrantes[1].getID()];
-</div>    
+</div>
+</section>       
 </body>
