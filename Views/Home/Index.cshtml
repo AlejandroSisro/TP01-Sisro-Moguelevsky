@@ -3,20 +3,40 @@
 
 }
 <body>
-<h1>Grupos de Trabajo - Programacion</h1>
-<div>
-    
+<h1>Grupos de Trabajo - Programacion</h1> 
     @foreach(Integrante item in viewBag.integrantes)
     {
      <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
     }
+<div>
     <h2>El Integrante 1 es @viewBag.integrantes[0].getName()</h2>
     <img src=Imagenes/@viewBag.integrantes[0].getImage()>
+    <h3>DNI: @viewBag.integrantes[0].getID()</h3>
+    <h3>Fecha de nacimiento: @viewBag.integrantes[0].getDate()</h3>
+    @for(int i = 0; i < @viewBag.integrantes[0].getRelatives().Count; i++)
+    {
+        @Console.WriteLine(@viewBag.integrantes[0].getRelatives()[i]);
+    }
+    @for(int i = 0; i < @viewBag.integrantes[0].getInterests().Count; i++)
+    {
+        <h3>(@(viewBag.integrantes[0].getInterests())[i]);</h3>
+    }
+    @viewBag.integrantes[integrantes[0].getID()];
+</div>
+<div>
     <h2>El Integrante 2 es @viewBag.integrantes[1].getName()</h2>
     <img src=Imagenes/@viewBag.integrantes[1].getImage()>
-    
-
-/>
-</div>
+    <h3>DNI: @viewBag.integrantes[1].getID()</h3>
+    <h3>Fecha de nacimiento: @viewBag.integrantes[1].getDate()</h3>
+    @for(int i = 0; i < @viewBag.integrantes[1].getRelatives().Count; i++)
+    {
+        <h3>Familiares</h3>
+        @Console.WriteLine(@viewBag.integrantes[1].getRelatives()[i]);
+    }
+    @for(int i = 0; i < @viewBag.integrantes[1].getInterests().Count; i++)
+    {
+        <h3>Intereses</h3>
+        <h3>(@(viewBag.integrantes[1].getInterests())[i]);</h3>
+    }
+</div>    
 </body>
-
